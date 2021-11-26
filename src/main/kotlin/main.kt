@@ -1,3 +1,6 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val  numbers = listOf(0,3,8,4,0,5,5,8,9,2)
+    println("list: $numbers")
+    println("sorted: ${numbers.sorted()}")
+
 }
