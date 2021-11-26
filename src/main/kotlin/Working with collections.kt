@@ -28,4 +28,17 @@ fun main (args: Array<String>) {
     }
     println(filteredName)
 
+    //lambda expression
+    //stored in a variable
+    val triple: (Int) -> Int = {it * 3}
+    println(triple(5))
+
+    //Higher Order functions e.g. map(), filter
+    val peopleNames = listOf("Fred", "Ann", "Barbara", "Joe")
+    println(peopleNames.sorted())
+
+    println(peopleNames.sortedWith{ str1: String, str2: String ->
+        str1.length - str2.length
+        //if it returns <0, str1 is shorter, ==0, both strings have equal lengths, else str2 is longer
+    })
 }
